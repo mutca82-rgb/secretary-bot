@@ -563,7 +563,7 @@ async def process_message(user_id: int, text: str, update: Update, context: Cont
         reply = f"⚠️ Ошибка AI: {e}"
 
     append_history(user_id, "assistant", reply)
-    await update.message.reply_text(reply + event_suggestion, parse_mode="Markdown")
+    await update.message.reply_text(reply + event_suggestion)
 
 
 async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):

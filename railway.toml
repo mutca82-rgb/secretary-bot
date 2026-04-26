@@ -1,5 +1,5 @@
 [build]
-provider = "nixpacks"
+builder = "nixpacks"
 
-[build.nixpacks]
+[nixpacks]
 python_version = "3.11"
